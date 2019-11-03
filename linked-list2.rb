@@ -9,7 +9,7 @@ class LinkedListNode
   end
 end
 
-#-----------------Challenge-----------------#
+#------------------------------------------------------#
 
 class Stack
     attr_reader :data
@@ -29,21 +29,8 @@ class Stack
 
 end
 
-# ---------------Reverse List Function-------------- #
+# ---------------Reverse-------------- #
 
-# def reverse_list(list)
-  
-#     stack = Stack.new
-
-#     while list
-        
-#         stack.push(list.value)
-#         list = list.next_node
-#     end
-
-#     # ADD CODE HERE
-#     stack.data
-# end
 
 def reverse_list(list, previous=nil)
     
@@ -93,7 +80,3 @@ puts "-------"
 revlist = reverse_list(node3)
 
 print_nodes(revlist)
-
-# node3.print_values(node3)
-# puts '------------------------'
-# node3.print_values(node3.reverse_list(node3))
